@@ -1,0 +1,34 @@
+<style>
+
+  body {
+    margin: 0;
+    background: hsl(185, 52%, 50%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @keyframes pulse {
+    0% {
+      width: 45%;
+      height: 45%;
+    }
+    100% {
+      width: 50%;
+      height: 50%;
+    }
+  }
+
+  .pink-pulse {
+    width: 50%;
+    height: 50%;
+    background: pink;
+    border-radius: 50%;
+    animation: pulse 5s infinite alternate;
+    filter: blur(20px);
+  }
+
+</style>
+
+<div class="pink-pulse"></div>
